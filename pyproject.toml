@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dont-commit-me"
+version = "0.1.0"
+description = "pre-commit hook to catch debug code before it ships"
+requires-python = ">=3.11"
+dependencies = ["questionary>=2.0"]
+
+[project.scripts]
+dont-commit-me = "dont_commit_me.hook:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
