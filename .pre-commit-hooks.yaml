@@ -1,0 +1,6 @@
+- id: dont-commit-me
+  name: dont-commit-me
+  description: Detecta padrões indesejados em linhas adicionadas ao commit
+  entry: dont-commit-me
+  language: python
+  stages: [pre-commit]
